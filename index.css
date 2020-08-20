@@ -1,0 +1,107 @@
+*   {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    background-color: #3d3d3d;
+    color: white;
+    /* background-color: #20C1BD; */
+}
+
+h1 {
+    font-family: 'Work Sans', sans-serif;
+    padding-top: 5%;
+    padding-bottom: 2%;
+    /* margin-left: 20%;
+    margin-right: 20%; */
+    font-size: 60px;
+    font-weight: 800;
+    text-align: center;
+    position: relative;
+    text-shadow:
+		-2px -2px 0 #000,
+		2px -2px 0 #000,
+		-2px 2px 0 #000,
+		2px 2px 0 #000;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+#screen {
+    padding: 20vh;
+    background-color: #20c1beee;
+}
+
+#coverpic  {
+    background-image: url("images/pen-4337521_1920.jpg");
+    background-size: cover;
+    background-position-y: 55%;
+    padding-bottom: 10%;
+    position: relative;
+}
+
+#coverpic::before   {    
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.3);
+}
+
+#details {
+    /* margin-left: 11%; */
+    width: 50%;
+    display: table;
+    margin: 0px auto 0px auto;
+    /* padding-top: 1px;
+    padding-bottom: 1px; */
+    padding: 4px;
+    text-align: center;
+    font-size: 20px;
+    position: relative;
+    
+    /* background-color: #3d3d3d; */
+
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+#nav    {    
+    background-color: #333;
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+  
+li {
+    float: left;
+} 
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 60px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #20C1BD;
+}
+
+.active {
+    background-color: #20C1BD;
+}
